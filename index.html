@@ -2,48 +2,86 @@
 <html lang="en">
     <head>
         <title>Meeting Minutes</title>
+        <meta name="Meeting Minutes" content="Meeting 1">
+        <link rel="icon" href="/volleyball.png">
     </head>
     <body>
         <nav>
-            <ol>
+            <ul>
                 <li><a href="#attendance">Attendance</a></li>
                 <li><a href="#agenda">Agenda</a></li>
                 <li><a href="#prev">Prev</a></li>
                 <li><a href="#new">New</a></li>
-            </ol>
+                <li><a href="#recording">Recording</a></li>
+            </ul>
+            <hr>
         </nav>
         <header>
+            <div id ="attendance">
+                <h2>Attendance</h2>
+                <ol>
+                    <li>Bryan</li>
+                    <li>Brandon</li>
+                    <li>Jake</li>
+                    <li>Prescott</li>
+                    <li>Anthony</li>
+                    <li>Ron</li>
+                    <li>Dylan</li>
+                    <li>Drake</li>
+                    <li>Tom</li>
+                    <li>Raul</li>
+                </ol>
+            </div>
             <h1>Pomodoro Timer First Brainstorm </h1>
         </header>
-        <attendance>
-            <h2>Attendance</h2>
-            <ol>
-                <li>Bryan</li>
-                <li>Brandon</li>
-                <li>Jake</li>
-                <li>Prescott</li>
-                <li>Anthony</li>
-                <li>Ron</li>
-                <li>Dylan</li>
-                <li>Drake</li>
-                <li>Tom</li>
-                <li>Raul</li>
-            </ol>
-            </attendance>
-        <agenda>
+        <div id="agenda">
             <h3>Agenda</h3>
             <ul>
-                <li> Talk about the specifications of the Pomodoro Timer. Ex. how long the periods of time for focused work versus breaks</li>
-                <li> Decide on a group leader</li>
+                <li> Talk about the <b>specifications</b> of the Pomodoro Timer. Ex. how long the periods of time for focused work versus breaks</li>
+                <li> Decide on a <strong>group leader</strong></li>
                 <li> What is everyone good at?</li>
                 <li> How to split up the work</li>
             </ul>
-        </agenda>
-        <prev>
+        </div>
+        <div id="prev">
             <h3>Previous Business</h3>
-        </prev>
-        <new>
+            <p> Previously we decided on the project of a Pomodoro Timer due to its simple implementation. The Pomodoro Timer is a tool often used to optimize productivity while working. Although it gives the user 25 minutes to do work,
+                they should be planning what they want to do with that time ahead. This would allow them to fully utilize the 25 minutes in the most optimal way, and not let other nitpicky things waste time for them.
+            </p>
+        </div>
+        <div id="new">
             <h3>New Business</h3>
-        </new>
+            <img class = "sketch"
+            src="/sketch.jpg"
+            alt = "Sketch">
+            <p>
+            The focus period of the Pomodoro Timer <em>will be</em> 25 minutes. Each break will be 5 minutes. They can set up mutliple focused and break periods that will introduce the longer break of 15 to 30 minutes for every 4 times
+            they have a focus period. For example, if they have 8 focused periods, there will be 8 breaks but the 4th and 8th  will be 15-30 minutes instead of 5 minutes. 
+            <br><br>
+            Everyone voted for Prescott to be the group leader because of his experience in the industry actually doing so.
+            <br><br>
+            Bryan, Brandon, and Jake are all well versed in <i>javascript</i>. Prescott, Anthony, and Ron have all learned a lot of <i>HTML and CSS</i>. Dylan, Drake, Tom, and Raul have a lot of knowledge about <i>back-end development.</i>
+             The work will be split up accordingly with mini-team dividing up the work given to them evenly. Moreover, people from each specialized mini-team are allowed to help the other teams if they need it.
+            </p>
+        </div>
+        <div id = "recording">
+            <h3>Recording</h3>
+            <video controls width="250">
+                <source src="/muppets.mp4"
+                type="video/mp4">
+                <a href="/muppets.mp4">MP4 Download</a>
+            </video>
+            <br>
+            <audio
+                controls
+                src="/muppets.mp3">
+                    <a href="/muppets.mp3">
+                        Download Audio
+                    </a>
+            </audio>
+        </div>
+        <footer>
+            By Dylan Olivares
+        </footer>
     </body>
 </html>
