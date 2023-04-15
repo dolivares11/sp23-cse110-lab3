@@ -80,7 +80,55 @@
                     </a>
             </audio>
         </div>
-        <footer>
+
+        <form method="get">
+            <details>
+                <summary>Disclosure</summary>
+                This is not related to the rest of the meeting minutes page created.
+            </details>
+            <fieldset>
+                <input type="date" id="date">
+                <br>
+                <legend>Form</legend>
+                <label>Are you happy?</label>
+                <input type="checkbox"><br>
+                <label>What do you want to do with your life?</label>
+                <input type="text"> <br>
+                <label>What's your favorite language</label>
+                <br>
+                <input type="radio" id="C++" name="language" value="C" >
+                <label for="C++">C++</label><br>
+                <input type="radio" id="Java" name="language" value="J">
+                <label for="Java">Java</label><br>
+                <input type="radio" id="Python" name="language" value="P">
+                <label for="Python">Python</label>
+            <br>
+                <label for="class-select">What's your favorite CSE class at UCSD:</label>
+                <select id="class-select">
+                    <option value="">-Choose-</option>
+                    <option value="CSE-101">CSE-101</option>
+                    <option value="CSE-100">CSE-100</option>
+                    <option value="CSE-105">CSE-105</option>
+                    <option value="CSE-110">CSE-110</option>
+                    <option value="CSE-140">CSE-140</option>
+                </select> <br>
+                <label for="favorite-pet">What was the impact of your first pet on your life?</label> <br>
+                <textarea id="favorite-pet" name="survey" rows="5" cols="33">
+                </textarea>
+                <br>
+                <label for="major">What's your favorite major</label>
+                <input list="major" id="major-choice" name="major-choice">
+                <datalist id="major">
+                        <option value="Computer Science">
+                        <option value="Computer Engineering">
+                        <option value="Mechanical Engineering">
+                        <option value="Psychology">
+                        <option value="Electrical Engineering">
+                </datalist>
+            </fieldset>
+            <button>Save</button>
+        </form>
+        <footer> 
             By Dylan Olivares
         </footer>
     </body>
