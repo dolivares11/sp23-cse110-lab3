@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-https://dolivares11.github.io/sp22-cse110-lab3/
+https://dolivares11.github.io/sp23-cse110-lab3/
