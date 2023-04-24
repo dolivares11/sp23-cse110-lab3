@@ -14,29 +14,15 @@
                 <li><a href="#prev">Prev</a></li>
                 <li><a href="#new">New</a></li>
                 <li><a href="#recording">Recording</a></li>
+                
             </ul>
-            <hr>
         </nav>
         <header>
-            <div id ="attendance">
-                <h2>Attendance</h2>
-                <ol>
-                    <li>Bryan</li>
-                    <li>Brandon</li>
-                    <li>Jake</li>
-                    <li>Prescott</li>
-                    <li>Anthony</li>
-                    <li>Ron</li>
-                    <li>Dylan</li>
-                    <li>Drake</li>
-                    <li>Tom</li>
-                    <li>Raul</li>
-                </ol>
-            </div>
             <h1>Pomodoro Timer First Brainstorm </h1>
         </header>
+        <main>
         <div id="agenda">
-            <h3>Agenda</h3>
+            <h3 class="agenda-list">Agenda</h3>
             <ul>
                 <li> Talk about the <b>specifications</b> of the Pomodoro Timer. Ex. how long the periods of time for focused work versus breaks</li>
                 <li> Decide on a <strong>group leader</strong></li>
@@ -50,7 +36,6 @@
                 they should be planning what they want to do with that time ahead. This would allow them to fully utilize the 25 minutes in the most optimal way, and not let other nitpicky things waste time for them.
             </p>
         </div>
-        <main>
         <div id="new">
             <h3>New Business</h3>
             <img class = "sketch"
@@ -67,69 +52,87 @@
             </p>
         </div>
         </main>
-        <div id = "recording">
-            <h3>Recording</h3>
-            <video controls width="250">
-                <source src="muppets.mp4"
-                type="video/mp4">
-                <a href="muppets.mp4">MP4 Download</a>
-            </video>
-            <br>
-            <audio
-                controls
-                src="muppets.mp3">
-                    <a href="muppets.mp3">
-                        Download Audio
-                    </a>
-            </audio>
-        </div>
+        <div id = "grid">
+            <div id = "attendance">
+                <h3>Attendance</h2>
+                <ol>
+                    <li>Bryan</li>
+                    <li>Brandon</li>
+                    <li>Jake</li>
+                    <li>Prescott</li>
+                    <li>Anthony</li>
+                    <li>Ron</li>
+                    <li>Dylan</li>
+                    <li>Drake</li>
+                    <li>Tom</li>
+                    <li>Raul</li>
+                </ol>
+            </div>
+            <div id = "recording">
+                <h3 class = "center">Recording</h3>
+                <video controls width="250">
+                    <source src="muppets.mp4"
+                    type="video/mp4">
+                    <a href="muppets.mp4">MP4 Download</a>
+                </video>
+                <br>
+                <audio
+                    controls
+                    src="muppets.mp3">
+                        <a href="muppets.mp3">
+                            Download Audio
+                        </a>
+                </audio>
+            </div>
 
-        <form method="get">
-            <details>
-                <summary>Disclosure</summary>
-                This is not related to the rest of the meeting minutes page created.
-            </details>
-            <fieldset>
-                <input type="date" id="date">
-                <br>
-                <label>Are you happy?</label>
-                <input type="checkbox"><br>
-                <label>What do you want to do with your life?</label>
-                <input type="text"> <br>
-                <label>What's your favorite language</label>
-                <br>
-                <input type="radio" id="C++" name="language" value="C" >
-                <label for="C++">C++</label><br>
-                <input type="radio" id="Java" name="language" value="J">
-                <label for="Java">Java</label><br>
-                <input type="radio" id="Python" name="language" value="P">
-                <label for="Python">Python</label>
-            <br>
-                <label for="class-select">What's your favorite CSE class at UCSD:</label>
-                <select id="class-select">
-                    <option value="">-Choose-</option>
-                    <option value="CSE-101">CSE-101</option>
-                    <option value="CSE-100">CSE-100</option>
-                    <option value="CSE-105">CSE-105</option>
-                    <option value="CSE-110">CSE-110</option>
-                    <option value="CSE-140">CSE-140</option>
-                </select> <br>
-                <label for="favorite-pet">What was the impact of your first pet on your life?</label> <br>
-                <textarea id="favorite-pet" name="survey" rows="5" cols="33">
-                </textarea>
-                <br>
-                <label for="major-choices">What's your favorite major</label>
-                <input list="major" id="major-choices" name="major-choice">
-                <datalist id="major">
-                        <option value="Computer Science">
-                        <option value="Computer Engineering">
-                        <option value="Mechanical Engineering">
-                        <option value="Psychology">
-                        <option value="Electrical Engineering">
-                </datalist>
-            </fieldset>
-            <button>Save</button>
-        </form>
+            <form method="get">
+                <details>
+                    <summary>Disclosure</summary>
+                    This is not related to the rest of the meeting minutes page created.
+                </details>
+                <fieldset>
+                    <input type="date" id="date">
+                    <br>
+                    <label>Are you happy?</label>
+                    <input type="checkbox"><br>
+                    <label>What do you want to do with your life?</label>
+                    <input type="text"> <br>
+                    <label>What's your favorite language</label>
+                    <br> <hr>
+                    <input type="radio" id="C++" name="language" value="C" >
+                    <label for="C++">C++</label><br>
+                    <input type="radio" id="Java" name="language" value="J">
+                    <label for="Java">Java</label><br>
+                    <input type="radio" id="Python" name="language" value="P">
+                    <label for="Python">Python</label>
+                <br> <hr>
+                    <label for="class-select">What's your favorite CSE class at UCSD:</label>
+                    <select id="class-select">
+                        <option value="">-Choose-</option>
+                        <option value="CSE-101">CSE-101</option>
+                        <option value="CSE-100">CSE-100</option>
+                        <option value="CSE-105">CSE-105</option>
+                        <option value="CSE-110">CSE-110</option>
+                        <option value="CSE-140">CSE-140</option>
+                    </select> <br> <hr>
+                    <label for="favorite-pet">What was the impact of your first pet on your life?</label> <br>
+                    <textarea id="favorite-pet" name="survey" rows="5" cols="33">
+                    </textarea>
+                    <br>
+                    <hr>
+                    <label for="major-choices">What's your favorite major</label>
+                    <input list="major" id="major-choices" name="major-choice">
+                    <datalist id="major">
+                            <option value="Computer Science">
+                            <option value="Computer Engineering">
+                            <option value="Mechanical Engineering">
+                            <option value="Psychology">
+                            <option value="Electrical Engineering">
+                    </datalist>
+                </fieldset>
+                <button>Save</button>
+            </form>
+       </div>
         <footer> 
             By Dylan Olivares
         </footer>

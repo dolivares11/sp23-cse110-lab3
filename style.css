@@ -1,51 +1,169 @@
-body {
-    background-color: grey;
-    background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
-    color:black;
+@font-face {
+    font-family: "myFont";
+    src: url("myFont.ttf");
 }
-a:link {
+
+@media screen and (min-width: 480px) {
+    body {
+        display:inline-block;
+        background-color: beige;
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+        color:black;
+    }    
+}
+@media screen and (max-width: 480px) {
+    body {
+        display:inline-block;
+        background-color: rgb(220, 222, 245);
+        background-size: cover;
+        background-position: center;
+        color:black;
+    }    
+}
+
+a:link, a:visited {
     color: white;
 }
-a:visited{
-    color: white;
+
+a[href="#agenda"], a[href="#prev"], a[href="#new"] {
+    color:pink;
 }
+
 #navbar {
-    margin-top: 20px;
+    text-decoration:overline;
+    top:0px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     color: white;
-    background-image: url("sunset.jpg");
     background-size: cover;
-    font-size: 15px;
+    background-color: grey;
+    font-size: 20px;
     height: .56in;
     width: 75em;
+    position:sticky;
+    font-family: "myFont";
+    border-radius:30px;
 }
+a:hover {
+    background-color: rgb(244, 161, 175);
+}
+a:active {
+    background-color: red;
+}
+
 h1 {
-    background-color: orangered;
+    margin:auto;
+    background-color: grey;
     width: 30vw;
     height: 3.5vh;
+    border-radius: 30px;
+    padding-left: 10px;
 }
+
 h2 {
-    background-color: orangered;
+    border-radius: 30px;
+    background-color: grey;
     width: 30vw;
     height: 3vh;
+    padding-left: 10px;
 }
+
 h3 {
-    background-color: orangered;
+    border-radius: 30px;
+    background-color: grey;
     width: 30vw;
     height: 2.5vh;
+    padding-left: 10px;
 }
+
 ul#horizontal-list {
     list-style: none;
     padding-top: 5.2916666667mm;
 }
+
 ul#horizontal-list li {
     display: inline;
     padding: 5em;
 }
+
+main {
+    display: flex;
+    max-width: 100%;
+    min-width: 25%;
+    margin: 20px 20px 20px 20px;
+    background-color: beige;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 50px;
+    border-style: double;
+}
+.agenda-list {
+    text-align:center
+}
+#new {
+    padding-left:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-align:center
+}
+#agenda {
+    padding-top: 10px;
+    padding-left:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+#prev {
+    padding: 10px 10px 10px 10px;
+    text-align:center
+}
 #recording {
-    
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+#attendance {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+}
+form {
+    display: block;
+    grid-column-start: 1;
+    grid-row-start:3;
+    grid-row-end:6;
+}
+
+.center {
+    width: 250px;
+}
+
+#grid {
+    display:grid;
+    grid-gap: 20px;
+}
+* {
+    color:black;
+}
+div + h3 {
+    font-size:20px;
+}
+div > p {
+    color:black;
+}
+h2 ~ ol {
+    display:block;
+}
+main p , main li{
+    font-size: 18px;
+}
+nav.li {
+    font-size:20px;
 }
